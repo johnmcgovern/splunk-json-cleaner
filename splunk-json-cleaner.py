@@ -6,7 +6,7 @@ outputLogLocation = "data/out.json"
 print("Input File: " + inputLogLocation)
 print("Output File: " + outputLogLocation + "\n")
 
-myInputFile = open(inputLogLocation, "r", encoding='utf-8', errors='replace')
+myInputFile = open(inputLogLocation, "r", encoding='utf-8', errors='ignore')
 myOutputFile = open(outputLogLocation, "w")
 
 counter = 1
