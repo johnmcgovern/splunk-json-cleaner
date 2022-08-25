@@ -1,7 +1,8 @@
 import re
 
-inputLogLocation = "data/in.json"
-outputLogLocation = "data/out.json"
+fileKey = "botsv5_gcp"
+inputLogLocation = "data/" + fileKey + ".json"
+outputLogLocation = "data/" + fileKey + "-out.json"
 
 print("Input File: " + inputLogLocation)
 print("Output File: " + outputLogLocation + "\n")
