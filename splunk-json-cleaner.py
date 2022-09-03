@@ -1,8 +1,18 @@
 import re
+import sys
 
-fileKey = "botsv4_1"
-inputLogLocation = "data/" + fileKey + "-in.json"
-outputLogLocation = "data/" + fileKey + ".json"
+
+# Get file base path in arguments
+try:
+    file_key = sys.argv[1]
+    print("\nFile Key (Without Extension):", sys.argv[1])
+except: 
+    print("No file specified. Exiting")
+    exit()
+
+
+inputLogLocation = "data/" + file_key + "-in.json"
+outputLogLocation = "data/" + file_key + ".json"
 
 print("Input File: " + inputLogLocation)
 print("Output File: " + outputLogLocation + "\n")
